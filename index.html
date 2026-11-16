@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SG Kaarst Volleyball – Aufwärmprogramm von Nabil Nmyes</title>
+<meta name="description" content="Aufwärmprogramm der SG Kaarst Volleyball: 33 Übungen in drei Phasen (Raise, Activate & Mobilise, Potentiate), ca. 16–18 Minuten, mit animierten Übungs-Reels, Timer und Technik-Hinweisen.">
+<meta name="keywords" content="Volleyball, Aufwärmen, Aufwärmprogramm, SG Kaarst, Kaarst, RAMP, Mobilisation, Training, Übungen">
+<meta name="author" content="Nabil Nmyes">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SG Kaarst Volleyball – Aufwärmprogramm">
+<meta property="og:description" content="33 Übungen, ca. 16–18 Minuten, als Reels mit Timer.">
+<meta property="og:image" content="https://sgvolley.github.io/sgkaarst-aufwaermen/img/regular_skips.jpg">
+<meta property="og:url" content="https://sgvolley.github.io/sgkaarst-aufwaermen/">
+<link rel="canonical" href="https://sgvolley.github.io/sgkaarst-aufwaermen/">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Hallenabend: dunkles Vereinsblau als Bühne, Spielfeldblau als Fläche, Ballgelb als einziger Akzent.
+     Layout: Übersicht als Anzeigetafel, Training als vertikaler Reel-Feed (Scroll-Snap, ein Clip pro Übung). */
+  --ink: #081430;
+  --panel: #0F2147;
+  --court: #005AA9;
+  --ball: #F5C518;
+  --chalk: #EEF3FA;
+  --mute: #93A6C6;
+  --line: #22396A;
+  --stage: #F7F9FC;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--ink); color: var(--chalk); font-family: var(--body); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ball); outline-offset: 2px; }
+img, video { max-width: 100%; display: block; }
+h1, h2, h3 { text-wrap: balance; }
+
+/* ---------- Übersicht ---------- */
+#start > * { min-width: 0; }
+#start { max-width: 760px; margin: 0 auto; padding: max(20px, env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom)); display: grid; gap: 28px; }
+.club { display: flex; align-items: center; gap: 12px; }
+.club img { width: 44px; height: auto; }
+.club span { font-family: var(--display); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 15px; color: var(--mute); }
+.hero { display: grid; gap: 14px; }
+.hero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(46px, 13vw, 112px); overflow-wrap: anywhere; line-height: .86; letter-spacing: -.01em; text-transform: uppercase; margin: 0; }
+.hero h1 em { font-style: normal; color: var(--ball); }
+.board { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.board div { padding: 12px 14px; background: var(--panel); display: grid; gap: 2px; }
+.board div + div { border-left: 1px solid var(--line); }
+.board b { font-family: var(--display); font-size: 36px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.board small { color: var(--mute); font-size: 13px; }
+.cta { justify-self: start; display: inline-flex; align-items: center; gap: 10px; background: var(--ball); color: var(--ink); border: 0; border-radius: 999px; padding: 14px 26px; font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: .04em; text-transform: uppercase; }
+.cta:hover { filter: brightness(1.06); }
+.cta svg { width: 18px; height: 18px; }
+.lead { display: grid; gap: 10px; max-width: 62ch; }
+.lead p { margin: 0; color: #C9D5EA; }
+.lead b { color: var(--chalk); }
+.sec-h { font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 15px; color: var(--mute); margin: 0 0 10px; }
+.timeline { display: flex; height: 54px; border-radius: 8px; overflow: hidden; gap: 2px; }
+.timeline button { border: 0; padding: 6px 8px; text-align: left; display: grid; align-content: space-between; min-width: 0; background: var(--court); }
+.timeline button:nth-child(2), .timeline button:nth-child(3), .timeline button:nth-child(4), .timeline button:nth-child(5) { background: #0B4A8C; }
+.timeline button:last-child { background: #1B3566; }
+.timeline b { font-family: var(--display); font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.timeline small { font-size: 12px; color: #C9D5EA; font-variant-numeric: tabular-nums; }
+.legend { display: flex; justify-content: space-between; color: var(--mute); font-size: 12px; margin-top: 6px; font-variant-numeric: tabular-nums; }
+.group { display: grid; gap: 8px; }
+.group h3 { margin: 10px 0 2px; font-family: var(--display); font-size: 22px; font-weight: 700; display: flex; gap: 10px; align-items: baseline; }
+.group h3 small { font-family: var(--body); font-size: 13px; font-weight: 400; color: var(--mute); }
+.list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
+.item { display: grid; grid-template-columns: 76px 1fr; gap: 10px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 6px; text-align: left; }
+.item:hover { border-color: var(--court); }
+.item img { width: 76px; height: 68px; object-fit: cover; border-radius: 6px; background: var(--stage); }
+.item b { display: block; font-size: 15px; line-height: 1.25; }
+.item small { color: var(--mute); font-size: 12.5px; line-height: 1.3; display: block; margin-top: 2px; }
+.item .vid { color: #FF6B61; }
+.idx { font-family: var(--display); color: var(--ball); font-weight: 700; margin-right: 4px; font-variant-numeric: tabular-nums; }
+.note { background: var(--panel); border-left: 4px solid var(--ball); padding: 12px 14px; border-radius: 6px; color: #C9D5EA; font-size: 14.5px; }
+
+/* ---------- Reels ---------- */
+#reels { position: fixed; inset: 0; background: #050D20; z-index: 10; display: none; }
+#reels.open { display: block; }
+.feed { height: 100%; overflow-y: auto; scroll-snap-type: y mandatory; overscroll-behavior: contain; scrollbar-width: none; }
+.feed::-webkit-scrollbar { display: none; }
+.reel { height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: flex; justify-content: center; }
+.card { position: relative; width: 100%; max-width: 480px; height: 100%; display: flex; flex-direction: column; background: var(--ink); }
+.stage { position: relative; flex: 0 0 auto; aspect-ratio: 9 / 8; max-height: 56%; background: var(--stage); overflow: hidden; }
+.stage video { width: 100%; height: 100%; object-fit: contain; background: var(--stage); }
+.tap { position: absolute; inset: 0; border: 0; background: transparent; }
+.paused-badge { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 64px; height: 64px; border-radius: 50%; background: rgba(8,20,48,.7); display: none; place-items: center; pointer-events: none; }
+.reel.paused .paused-badge { display: grid; }
+.info { flex: 1 1 auto; overflow-y: auto; padding: 16px 18px calc(18px + env(safe-area-inset-bottom)); display: grid; align-content: start; gap: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12.5px; padding: 3px 10px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); color: #C9D5EA; }
+.chip.ph { background: var(--court); border-color: var(--court); color: #fff; font-weight: 700; }
+.title { margin: 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(30px, 8.5vw, 40px); line-height: .95; }
+.title .no { color: var(--ball); margin-right: 8px; }
+.en { color: var(--mute); font-size: 14px; margin-top: -4px; }
+.meta { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ball); font-size: 15px; }
+.meta svg { width: 18px; height: 18px; flex: none; }
+.field { margin: 0; color: #D3DDEE; font-size: 15px; }
+.field b { color: var(--chalk); }
+.yt { display: inline-flex; align-items: center; gap: 8px; justify-self: start; background: var(--panel); border: 1px solid var(--line); color: var(--chalk); border-radius: 999px; padding: 8px 16px 8px 10px; font-weight: 700; font-size: 15px; text-decoration: none; }
+.yt:hover { border-color: #FF3B30; }
+.yt svg { width: 22px; height: 22px; flex: none; }
+.yt small { font-weight: 400; color: var(--mute); }
+.hint { color: var(--mute); font-size: 13px; display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+
+.topbar { position: absolute; top: 0; left: 50%; translate: -50% 0; width: 100%; max-width: 480px; z-index: 3; padding: max(10px, env(safe-area-inset-top)) 12px 8px; display: grid; gap: 8px; background: linear-gradient(rgba(5,13,32,.55), rgba(5,13,32,0)); pointer-events: none; }
+.topbar > * { pointer-events: auto; }
+.segs { display: flex; gap: 3px; }
+.segs i { flex: var(--w); height: 4px; border-radius: 2px; background: rgba(255,255,255,.35); position: relative; overflow: hidden; }
+.segs i::after { content: ""; position: absolute; inset: 0; width: var(--p, 0%); background: var(--ball); }
+.tb-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.back { display: inline-flex; align-items: center; gap: 6px; background: rgba(8,20,48,.72); border: 0; border-radius: 999px; padding: 6px 12px 6px 8px; font-size: 14px; font-weight: 700; }
+.back svg { width: 18px; height: 18px; }
+.count { background: rgba(8,20,48,.72); border-radius: 999px; padding: 5px 12px; font-family: var(--display); font-weight: 700; font-size: 18px; font-variant-numeric: tabular-nums; }
+.count b { color: var(--ball); }
+
+.tline { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.rb { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--ball); background: transparent; color: var(--ball); border-radius: 999px; padding: 8px 16px 8px 12px; font-weight: 700; font-size: 15px; }
+.rb svg { width: 20px; height: 20px; }
+.rb.on { background: var(--ball); color: var(--ink); }
+.timer { display: none; align-items: center; gap: 8px; }
+.reel.timing .timer { display: flex; }
+.ring { width: 46px; height: 46px; }
+.ring circle { fill: none; stroke-width: 5; }
+.ring .bg { stroke: rgba(255,255,255,.2); }
+.ring .fg { stroke: var(--ball); stroke-linecap: round; transform: rotate(-90deg); transform-origin: 50% 50%; transition: stroke-dashoffset .25s linear; }
+.timer b { font-family: var(--display); font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; min-width: 2.2ch; }
+.reel.done .timer b { color: var(--ball); }
+
+.nav { position: fixed; right: max(16px, calc(50% - 330px)); top: 50%; translate: 0 -50%; display: none; gap: 10px; z-index: 4; }
+.nav button { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel); display: grid; place-items: center; }
+.nav svg { width: 22px; height: 22px; }
+@media (min-width: 760px) { .nav { display: grid; } .card { border-left: 1px solid var(--line); border-right: 1px solid var(--line); } }
+.endcard { flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 16px; padding: 24px; }
+.endcard h2 { font-family: var(--display); font-size: 48px; text-transform: uppercase; margin: 0; line-height: .95; }
+.endcard p { color: #C9D5EA; max-width: 40ch; margin: 0; }
+@media (prefers-reduced-motion: reduce) { .ring .fg { transition: none; } .feed { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<main id="start" aria-labelledby="h-start">
+  <div class="club"><img src="logo.png" alt="SG Kaarst Wappen" width="44" height="53"><span>SG Kaarst 1912/35 · Volleyball<br>Aufwärmprogramm von Nabil Nmyes</span></div>
+  <section class="hero">
+    <h1 id="h-start">Aufwärmen <em>in Reels</em></h1>
+    <div class="board" aria-label="Kennzahlen">
+      <div><b id="st-n">33</b><small>Übungen</small></div>
+      <div><b>16–18</b><small>Minuten</small></div>
+      <div><b>3</b><small>Phasen</small></div>
+    </div>
+    <button class="cta" id="go" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 4.5v15l12.5-7.5z"/></svg>Training starten</button>
+  </section>
+  <section class="lead" aria-label="Worum es geht">
+    <p><b>Was wir vorhaben:</b> Vor jedem Training, Spiel und jeder Leistungsdiagnostik wärmt sich die gesamte Trainingsgruppe nach einem festen Ablauf auf. Alle Übungen laufen an den Seitenlinien oder im Kreis und brauchen kein Zusatzmaterial (optional Volleybälle bei den Ausfallschritten mit Rumpfrotation und beim Beine kippen).</p>
+    <p><b>Wozu:</b> Das Programm bereitet Körper und Nervensystem schrittweise auf maximale Belastungen vor: Herz-Kreislauf hochfahren, Gelenke und Rumpf beweglich machen, dann Sprungkraft und Schnelligkeit aktivieren. Das senkt das Verletzungsrisiko, besonders an Sprunggelenk, Oberschenkelrückseite und Schulter. Weil alle denselben Ablauf durchlaufen, sind die Bedingungen bei Leistungstests vergleichbar.</p>
+  </section>
+  <section aria-labelledby="h-tl">
+    <h2 class="sec-h" id="h-tl">Ablauf · tippen zum Springen</h2>
+    <div class="timeline" id="timeline"></div>
+    <div class="legend"><span>0 Min.</span><span>danach 2–3 Min. Pause</span><span>≈ 16 Min.</span></div>
+  </section>
+  <section aria-labelledby="h-list">
+    <h2 class="sec-h" id="h-list">Alle Übungen</h2>
+    <div id="groups" class="group"></div>
+  </section>
+  <p class="note" id="trainer"></p>
+</main>
+
+<div id="reels" role="dialog" aria-label="Training im Reel-Modus">
+  <div class="topbar">
+    <div class="segs" id="segs"></div>
+    <div class="tb-row">
+      <button class="back" id="back" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg>Übersicht</button>
+      <span class="count" aria-live="polite"><b id="c-i">1</b> / <span id="c-n">33</span></span>
+    </div>
+  </div>
+  <div class="feed" id="feed"></div>
+  <div class="nav" aria-label="Navigation">
+    <button type="button" id="prev" aria-label="Vorherige Übung"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 15l6-6 6 6"/></svg></button>
+    <button type="button" id="next" aria-label="Nächste Übung"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 9l6 6 6-6"/></svg></button>
+  </div>
+</div>
+
+<script>
+const DATA = {"exercises": [{"key": "regular_skips", "title": "Hopserlauf", "en": "Regular Skips", "num": "", "phase": "Phase 1", "part": null, "fields": [["Umfang", "4 Bahnen (2× hin & zurück)"], ["Ausführung", "Lockerer, federnder Hopserlauf mit aktivem Kniehub und diagonalem Armschwung. Der Abstoß erfolgt elastisch über den Vorfuß, der Oberkörper bleibt aufrecht."], ["Fokus", "Aktivierung der Sprunggelenks- und Wadenmuskulatur; rhythmische Koordination."]], "meta": "4 Bahnen (2× hin & zurück)", "timer": null, "video": "https://www.youtube.com/watch?v=m9MccH7mWO0"}, {"key": "side_shuffle", "title": "Seitlicher Nachstellschritt", "en": "Side Shuffle", "num": "", "phase": "Phase 1", "part": null, "fields": [["Umfang", "4 Bahnen (2× hin & zurück)"], ["Ausführung", "Seitliches Nachstelllaufen in tiefer, athletischer Grundposition (Hüfte und Knie gebeugt, Blick zum Netz). Die Füße überkreuzen nicht; nach jeder Bahn die Blickrichtung beibehalten, damit beide Seiten gleich belastet werden."], ["Fokus", "Vorbereitung auf seitliche Verschiebebewegungen in Block und Feldabwehr."]], "meta": "4 Bahnen (2× hin & zurück)", "timer": null, "video": "https://www.youtube.com/watch?v=vNYAtI9_ikk"}, {"key": "carioca", "title": "Überkreuzlauf", "en": "Carioca", "num": "", "phase": "Phase 1", "part": null, "fields": [["Umfang", "4 Bahnen (2× hin & zurück)"], ["Ausführung", "Seitlicher Überkreuzlauf mit deutlicher Hüftrotation: Das hintere Bein kreuzt abwechselnd vor und hinter dem Standbein. Der Schultergürtel bleibt möglichst ruhig und parallel zum Netz."], ["Fokus", "Mobilisation der Brustwirbelsäule und Hüftrotatoren für schnelle Richtungswechsel."]], "meta": "4 Bahnen (2× hin & zurück)", "timer": null, "video": "https://www.youtube.com/watch?v=R3__Q_SulyM"}, {"key": "a_skips_backpedal", "title": "Kniehebelauf (hin) – Rückwärtslauf (zurück)", "en": "A-Skips / Backpedal", "num": "", "phase": "Phase 1", "part": null, "fields": [["Umfang", "4 Bahnen (2× hin & zurück)"], ["Ausführung", "Hinweg (A-Skips): dynamischer Kniehebelauf mit kurzem Zwischenhopser, aktivem Fußaufsatz unter dem Körperschwerpunkt und angezogener Fußspitze. Rückweg (Backpedal): kontrolliertes Rückwärtslaufen auf dem Vorfuß mit leicht vorgebeugtem Oberkörper und schnellen, kurzen Schritten."], ["Fokus", "Laufökonomie, Reaktivkraft und sichere Rückwärtsbewegung bei hohen Bällen."]], "meta": "4 Bahnen (2× hin & zurück)", "timer": null, "video": "https://www.youtube.com/watch?v=EpmUHWqtZ04"}, {"key": "handwalk", "title": "Raupe", "en": "Handwalk", "num": "", "phase": "Phase 2", "part": "Teil A: Dynamische Bahnen", "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Aus dem aufrechten Stand mit gestreckten Beinen nach vorne beugen, Hände aufsetzen und nach vorne in die Liegestützposition wandern. Kurz Rumpfspannung halten, dann mit kleinen Schritten bei gestreckten Knien zu den Händen nachwandern."], ["Fokus", "Dynamische Dehnung der hinteren Beinkette (ischiocrurale Muskulatur) und Schulterstabilität."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=aFkv2m9FTGs"}, {"key": "lunges_rotation", "title": "Ausfallschritte mit Rumpfrotation", "en": "Lunges with Rotation", "num": "", "phase": "Phase 2", "part": "Teil A: Dynamische Bahnen", "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Großer Ausfallschritt nach vorne, das hintere Knie sinkt knapp über den Boden. Den Oberkörper kontrolliert zur Seite des vorderen Beines rotieren, beide Arme öffnen, zurückdrehen und in den nächsten Schritt abstoßen."], ["Fokus", "Aktivierung von Gesäß und Oberschenkeln sowie Rotation der Brustwirbelsäule für den Angriffsschlag."], ["Variante (Übung 142)", "Auf der Stelle im Ausfallschritt bleiben und den Oberkörper – optional mit einem Volleyball vor dem Körper – nach rechts und links drehen, dann Schrittwechsel."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=HCFUgYtIXlE"}, {"key": "worlds_greatest", "title": "Ausfallschritt-Dehnung mit Aufdrehen im Gehen", "en": "World’s Greatest Stretch", "num": "", "phase": "Phase 2", "part": "Teil A: Dynamische Bahnen", "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Ausfallschritt nach vorne, beide Hände innen neben dem vorderen Fuß absetzen. Den inneren Ellbogen tief zum Fußknöchel absenken, anschließend denselben Arm weit zur Hallendecke aufdrehen. Danach das vordere Bein kurz strecken und weiterschreiten."], ["Variante (Übung 140)", "Auf der Stelle im tiefen Ausfallschritt: eine Hand neben dem vorderen Fuß aufsetzen, den anderen Arm mit der Schulter voran zur Decke aufdrehen, dann Seitenwechsel."], ["Fokus", "Ganzkörper-Mobilisation von Hüftbeugern, Adduktoren, Oberschenkelrückseite und Schultergürtel."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=-CiWQ2IvY34"}, {"key": "lateral_lunges", "title": "Seitliche Ausfallschritte", "en": "Lateral Lunges", "num": "", "phase": "Phase 2", "part": "Teil A: Dynamische Bahnen", "fields": [["Umfang", "2 Bahnen je Richtung"], ["Ausführung", "Weiter seitlicher Ausfallschritt: Das Standbein beugt tief (Gesäß schiebt nach hinten), das andere Bein bleibt gestreckt, beide Fußsohlen bleiben flach am Boden. Kräftig abstoßen und seitlich weiterwandern."], ["Fokus", "Kraft- und Mobilitätsvorbereitung für tiefe Abwehrpositionen nach rechts und links."]], "meta": "2 Bahnen je Richtung", "timer": null, "video": "https://www.youtube.com/watch?v=SMaZKnviJuA"}, {"key": "single_leg_hinge", "title": "Standwaage im Gehen", "en": "Single Leg Hinge Walk", "num": "", "phase": "Phase 2", "part": "Teil A: Dynamische Bahnen", "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Einbeinige Standwaage im Gehen: Auf einem Bein stehend den Oberkörper mit geradem Rücken nach vorne neigen, während das Spielbein gestreckt nach hinten oben führt. Kurz balancieren, aufrichten und Schritt nach vorne setzen."], ["Fokus", "Stärkung der hinteren Muskelkette sowie Beinachsen- und Sprunggelenksstabilität."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=dsXuDBh-vZ8"}, {"key": "glute_bridge", "title": "Beckenheben", "en": "Glute Bridge", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "Rückenlage, Füße hüftbreit aufgestellt. Die Hüfte durch aktives Anspannen der Gesäßmuskulatur anheben, bis Oberschenkel und Oberkörper eine gerade Linie bilden, ohne ins Hohlkreuz zu fallen."], ["Fokus", "Gezielte Aktivierung der Gesäßmuskulatur für explosive Absprünge."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=saSTykj7IGs"}, {"key": "bridge_walkout", "title": "Beckenheben mit Fersenlauf", "en": "Bridge with Walkout", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "Aus der oberen Position des Beckenhebens mit kleinen, kontrollierten Schritten auf den Fersen nach vorne wandern, bis die Beine fast gestreckt sind (Becken bleibt oben), und wieder zurücklaufen."], ["Fokus", "Exzentrische Aktivierung der Oberschenkelrückseite (Hamstrings) zur Verletzungsprophylaxe."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=NaisR71dDxI"}, {"key": "bridge_situp", "title": "Beckenheben mit Aufrichten", "en": "Bridge with Sit-Up", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "Hüftheben in Rückenlage (Beckenheben), kontrolliertes Absenken des Beckens und anschließendes Aufrichten zum Sit-Up mit gestreckten Armen nach vorne."], ["Fokus", "Rumpf-Hüft-Kopplung für die Bogenspannung beim Schmetterschlag."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=UXb03Uc0AKs"}, {"key": "prone_swimmer", "title": "Schwimmer in Bauchlage, wechselseitig", "en": "Prone Swimmer", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "Bauchlage, Blick zum Boden, Gesäß leicht angespannt. Ein Arm streckt nach vorne oben, der gegenüberliegende Arm führt mit nach unten gedrehter Handfläche hinter den Rücken; im Wechsel flüssig tauschen."], ["Fokus", "Aktivierung der Schulterblattfixatoren und Rotatorenmanschette vor Überkopfbelastungen."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=csPd3HMkRpQ"}, {"key": "prone_boomerang", "title": "Bumerang in Bauchlage", "en": "Prone Boomerang", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "Bauchlage mit leicht angehobenem Brustkorb. Beide Arme gleichzeitig aus der gestreckten Überkopfposition über die Seite nach hinten zum Gesäß führen (Innenrotation der Schulter) und wieder nach vorne."], ["Fokus", "Erwärmung der gesamten Schultermuskulatur und Streckung der Brustwirbelsäule."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=0ajHIYI-Jbw"}, {"key": "prone_i_to_w", "title": "I-W-Armzug in Bauchlage", "en": "Prone I to W", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "In Bauchlage beide Arme gestreckt nach vorne anheben („I“-Position, Daumen zeigen zur Decke), dann die Ellbogen eng nach hinten unten ziehen („W“-Position), Schulterblätter fest zusammenziehen und wieder strecken."], ["Fokus", "Kräftigung des unteren und mittleren Trapezmuskels zur Stabilisation der Schlag- und Blockschulter."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=Yv6sUKOwOY8"}, {"key": "sumo_squat", "title": "Breite Kniebeuge", "en": "Sumo-Squat", "num": "", "phase": "Phase 2", "part": "Teil B: Stationäre Aktivierung", "fields": [["Dauer", "ca. 20 Sekunden"], ["Ausführung", "Breiter Stand mit leicht nach außen gedrehten Fußspitzen. Tief in die Kniebeuge absinken, Knie aktiv nach außen drücken, Oberkörper bleibt aufrecht, dann explosiv nach oben strecken."], ["Fokus", "Öffnung der Hüfte und Aktivierung von Adduktoren und Quadrizeps."]], "meta": "ca. 20 Sekunden", "timer": 20, "video": "https://www.youtube.com/watch?v=4odA48wEdZg"}, {"key": "fusskreisen", "title": "Fußkreisen", "en": "", "num": "131", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Die Fußspitze bleibt auf dem Boden aufgesetzt, die Ferse kreist um diesen Punkt. Beide Richtungen, dann Fußwechsel."], ["Fokus", "Mobilisation des Sprunggelenks vor Sprüngen und Landungen."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "beinpendel", "title": "Beinpendel", "en": "", "num": "132", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Im Einbeinstand ein Bein locker nach vorne und hinten schwingen, dann Seitenwechsel. Variationen: seitlich vor dem Körper nach rechts und links pendeln oder das Bein in einer liegenden Acht (∞) führen."], ["Fokus", "Dynamische Mobilisation der Hüfte in mehreren Ebenen."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "hueftkreisen", "title": "Hüftkreisen", "en": "", "num": "133", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Hände an den Hüften, die Hüfte zunächst klein in beide Richtungen kreisen und die Kreise nach und nach vergrößern."], ["Fokus", "Lockerung von Hüftgelenk und Lendenwirbelsäule."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "armkreisen", "title": "Armkreisen", "en": "", "num": "134", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Die Arme kreisen im vollen Bewegungsradius des Schultergelenks und überkreuzen sich dabei vor dem Körper. Variation: Arme gegengleich kreisen."], ["Fokus", "Mobilisation des Schultergelenks vor Aufschlag und Angriff."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "armyoga", "title": "Armyoga", "en": "", "num": "135", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Bei angespanntem, ruhigem Oberkörper die gestreckten Arme abwechselnd vor der Brust und unten hinter dem Rücken zusammenklatschen."], ["Fokus", "Öffnung von Brust und vorderer Schulter, Rumpfstabilität."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "arm_aufdrehen", "title": "Arm aufdrehen", "en": "", "num": "136", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Hüftbreiter Stand, die Hüfte im Wechsel nach links und rechts drehen. Die Arme schwingen mit, jeweils nach hinten oben auf die Drehseite."], ["Fokus", "Rotation von Brustwirbelsäule und Hüfte."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "kopfbewegung", "title": "Kopfbewegung", "en": "", "num": "137", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Den Kopf auf drei Höhen (Blick nach oben, geradeaus, nach unten) jeweils langsam nach rechts und links drehen."], ["Fokus", "Mobilisation der Halswirbelsäule."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "ruecken_merged", "title": "Rumpfbeuge und Rückenmobilisation", "en": "", "num": "141/143", "phase": "Phase 2", "part": "Teil C: Mobilisation im Stand", "fields": [["Ausführung", "Hände an den Hüften. Den Oberkörper zuerst kontrolliert nach hinten ins Hohlkreuz strecken (Bauch dehnt sich). Dann nach vorne sinken lassen, die Arme locker hängen lassen und den Rücken bewusst so rund wie möglich machen; langsam wieder aufrollen."], ["Fokus", "Beweglichkeit der Wirbelsäule in Streckung und Beugung, Dehnung der hinteren Kette."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "vierfuessler_aufdrehen", "title": "Vierfüßler (Aufdrehen)", "en": "", "num": "139", "phase": "Phase 2", "part": "Teil D: Mobilisation am Boden", "fields": [["Ausführung", "Im Vierfüßlerstand den Oberkörper mit der Schulter voran aufdrehen, der Arm zeigt zur Decke. Zurück in den Vierfüßlerstand, Seitenwechsel."], ["Fokus", "Rotation der Brustwirbelsäule bei stabiler Hüfte."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "hueft_merged", "title": "Hüftpendel und Beine kippen", "en": "", "num": "138/144", "phase": "Phase 2", "part": "Teil D: Mobilisation am Boden", "fields": [["Ausführung", "Rückenlage, Arme seitlich ausgebreitet, Handflächen am Boden. Stufe 1 (Hüftpendel): Füße aufgestellt, die angewinkelten Knie langsam und kontrolliert zur rechten, dann zur linken Seite ablegen. Stufe 2 (Beine kippen): Beine anheben, Knie im 90°-Winkel, und zu einer Seite abkippen; der Kopf dreht gleichzeitig in die Gegenrichtung. Variation: zwei Volleybälle zwischen den Beinen einklemmen, um die Koordination zu erschweren."], ["Fokus", "Rotation der Lendenwirbelsäule und Rumpfkontrolle."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "katzenbuckel", "title": "Katzenbuckel", "en": "", "num": "145", "phase": "Phase 2", "part": "Teil D: Mobilisation am Boden", "fields": [["Ausführung", "Im Vierfüßlerstand den Rücken rund nach oben machen (Katzenbuckel, Kopf sinkt), dann in die entgegengesetzte Hohlkreuzstellung wechseln (Kopf hebt sich)."], ["Fokus", "Mobilisation der gesamten Wirbelsäule Segment für Segment."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "vierfuessler_beinkreisen", "title": "Beinkreisen im Vierfüßlerstand", "en": "", "num": "146", "phase": "Phase 2", "part": "Teil D: Mobilisation am Boden", "fields": [["Ausführung", "Im Vierfüßlerstand ein angewinkeltes Bein seitlich abspreizen, nach hinten führen und in einer Kreisbewegung wieder nach vorne in die Ausgangsposition bringen. Seitenwechsel."], ["Fokus", "Mobilisation des Hüftgelenks in allen Richtungen, Rumpfstabilität."]], "meta": "ca. 15–20 Sek. bzw. 5–6 Wdh. pro Seite", "timer": 20, "video": null}, {"key": "pogo_skips", "title": "Fußgelenksprünge", "en": "Pogo Skips", "num": "", "phase": "Phase 3", "part": null, "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Vertikale, federnde Sprünge fast ausschließlich aus den Sprunggelenken mit minimaler Kniebeugung. Füße beim Absprung aktiv anziehen, Bodenkontaktzeit so kurz und reaktiv wie möglich halten."], ["Fokus", "Steigerung der Steifigkeit (Stiffness) der Achillessehne für schnelle Auftaktschritte."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=j0nl5dWuqN4"}, {"key": "single_leg_broad", "title": "Einbeinige Weitsprünge", "en": "Single Leg Broad Jumps", "num": "", "phase": "Phase 3", "part": null, "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Einbeinige Standweitsprünge nach vorne (je 1 Bahn pro Bein oder im Wechsel): Mit kräftigem Armschwung abstoßen, weich und stabil auf einem Bein landen, kurz einfrieren und den nächsten Sprung einleiten."], ["Fokus", "Einbeinige Explosivkraft und Landekontrolle bei einbeinigen Absprüngen oder Ausfallschritten."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=Nb3zN5Sm3CQ"}, {"key": "broad_jumps", "title": "Beidbeinige Standweitsprünge", "en": "Broad Jumps", "num": "", "phase": "Phase 3", "part": null, "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Beidbeinige Standweitsprünge mit aktivem Ausholen der Arme nach hinten und explosivem Strecken von Hüfte, Knie und Sprunggelenk nach vorne oben. Lautlose, stabile Landung in athletischer Grundposition."], ["Fokus", "Horizontale Beschleunigungskraft (Triple Extension) für den Anlauf zum Angriff."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=7Du1KbwCdUk"}, {"key": "attack_jumps", "title": "Angriffssprünge", "en": "Attack Jumps", "num": "", "phase": "Phase 3", "part": null, "fields": [["Umfang", "2 Bahnen"], ["Ausführung", "Volleyballspezifischer Angriffsanlauf (3- oder 4-Schritt-Rhythmus) mit dynamischem Stemmschritt, weit nach hinten geführtem Doppelarmschwung und maximalem vertikalem Absprung sowie simulierter Schlagbewegung."], ["Fokus", "Spezifische neuronale Potenzierung für Sprunghöhe und Timing im Angriff."]], "meta": "2 Bahnen", "timer": null, "video": "https://www.youtube.com/watch?v=B7vbjJ2wQQQ"}, {"key": "lateral_jump_sprint", "title": "Seitsprung mit Abfangen und Sprintstart", "en": "Lateral Jump to Drop Sprint Start", "num": "", "phase": "Phase 3", "part": null, "fields": [["Umfang", "6–8 Bahnen"], ["Ausführung", "Seitlicher Sprung auf ein Bein, sofortiges Abfangen in tiefer Position (Drop), direkt gefolgt von einer explosiven 90°-Drehung und einem maximalen Antritt über 3–5 m in Laufrichtung der Bahn."], ["Fokus", "Reaktive Richtungswechsel, Abbrems- und Beschleunigungsfähigkeit sowie Antrittsschnelligkeit im Feld."]], "meta": "6–8 Bahnen", "timer": null, "video": "https://www.youtube.com/shorts/x1Vfq4fnXsY"}], "phases": {"Phase 1": {"n": "1", "name": "Raise", "sub": "Herz-Kreislauf & Lauf-ABC", "note": "Aufstellung an den Seitenlinien, pendelnd parallel zum Netz von Seitenlinie zu Seitenlinie (9 m). Alle Läufe über je 4 Bahnen (2× hin und zurück)."}, "Phase 2": {"n": "2", "name": "Activate & Mobilise", "sub": "Gelenke & Rumpf", "note": "Phase 2 besteht aus vier Teilen: dynamische Bahnen (A), stationäre Aktivierung (B) sowie die Mobilisationsübungen 131–146 im Stand (C) und am Boden (D)."}, "Phase 3": {"n": "3", "name": "Potentiate", "sub": "Explosivität & Schnelligkeit", "note": "Aufstellung an den Seitenlinien, pendelnd parallel zum Netz von Seitenlinie zu Seitenlinie. Fokus auf maximale Bewegungsqualität und kurze Bodenkontaktzeiten."}}, "trainer": "**Hinweis für Trainer*innen:** Zwischen dem Ende der Potentiate-Phase und dem Beginn der Leistungsdiagnostik bzw. der Hauptbelastung am Netz sollte eine Pause von 2–3 Minuten liegen, damit die volle neuromuskuläre Leistungsfähigkeit ohne Vorermüdung abgerufen werden kann."};
+const EX = DATA.exercises;
+const SECTIONS = [
+  { id: "p1", label: "Phase 1 · Raise", short: "Raise", min: 3, test: e => e.phase === "Phase 1" },
+  { id: "p2a", label: "Phase 2 · Teil A", short: "Teil A", min: 2.5, sub: "Dynamische Bahnen", test: e => e.part && e.part.startsWith("Teil A") },
+  { id: "p2b", label: "Phase 2 · Teil B", short: "Teil B", min: 2.5, sub: "Stationäre Aktivierung", test: e => e.part && e.part.startsWith("Teil B") },
+  { id: "p2c", label: "Phase 2 · Teil C", short: "Teil C", min: 2.5, sub: "Mobilisation im Stand", test: e => e.part && e.part.startsWith("Teil C") },
+  { id: "p2d", label: "Phase 2 · Teil D", short: "Teil D", min: 1.5, sub: "Mobilisation am Boden", test: e => e.part && e.part.startsWith("Teil D") },
+  { id: "p3", label: "Phase 3 · Potentiate", short: "Potentiate", min: 4, test: e => e.phase === "Phase 3" }
+];
+const SUBS = { p1: "Herz-Kreislauf & Lauf-ABC", p3: "Explosivität & Schnelligkeit" };
+EX.forEach((e, i) => { e.i = i; e.sec = SECTIONS.find(s => s.test(e)); });
+SECTIONS.forEach(s => { s.items = EX.filter(e => e.sec === s); s.first = s.items[0].i; });
+
+const $ = s => document.querySelector(s);
+const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const field = (e, k) => (e.fields.find(f => f[0] === k) || [])[1];
+const ICON = {
+  clock: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 9v4l2.5 2M9 2h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  lane: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16M20 4v16M12 5v3M12 11v3M12 17v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  play: '<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg>',
+  timer: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 9v4M9 2h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  yt: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#FF3B30"/><path d="M10 9v6l5-3z" fill="#fff"/></svg>',
+  down: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 9l6 6 6-6"/></svg>'
+};
+
+/* ---------- Übersicht ---------- */
+$("#st-n").textContent = EX.length;
+$("#c-n").textContent = EX.length;
+$("#trainer").innerHTML = esc(DATA.trainer).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+const total = SECTIONS.reduce((a, s) => a + s.min, 0);
+$("#timeline").innerHTML = SECTIONS.map(s =>
+  `<button type="button" data-jump="${s.first}" style="flex:${s.min}" aria-label="${esc(s.label)}, ca. ${String(s.min).replace(".", ",")} Minuten, ${s.items.length} Übungen"><b>${esc(s.short)}</b><small>${String(s.min).replace(".", ",")}′</small></button>`).join("");
+$("#groups").innerHTML = SECTIONS.map(s => `
+  <h3>${esc(s.label)} <small>${esc(s.sub || SUBS[s.id] || "")} · ca. ${String(s.min).replace(".", ",")} Min.</small></h3>
+  <div class="list">${s.items.map(e => `
+    <button class="item" type="button" data-jump="${e.i}">
+      <img src="img/${e.key}.jpg" alt="" loading="lazy" width="76" height="68">
+      <span><b><span class="idx">${String(e.i + 1).padStart(2, "0")}</span>${e.num ? esc(e.num) + " " : ""}${esc(e.title)}</b><small>${esc(e.meta)}${e.video ? ' · <span class="vid">▶ Video</span>' : ""}</small></span>
+    </button>`).join("")}</div>`).join("");
+
+/* ---------- Reels ---------- */
+const feed = $("#feed");
+feed.innerHTML = EX.map(e => {
+  const sec = e.sec;
+  const variante = field(e, "Variante (Übung 142)") || field(e, "Variante (Übung 140)");
+  const varLabel = e.fields.find(f => f[0].startsWith("Variante"));
+  return `<section class="reel" id="r${e.i}" data-i="${e.i}" aria-label="Übung ${e.i + 1}: ${esc(e.title)}">
+    <div class="card">
+      <div class="stage">
+        <video muted loop playsinline preload="none" poster="img/${e.key}.jpg" data-src="reels/${e.key}.mp4"></video>
+        <button class="tap" type="button" aria-label="Video anhalten oder abspielen"></button>
+        <span class="paused-badge">${ICON.play}</span>
+      </div>
+      <div class="info">
+        <div class="chips"><span class="chip ph">${esc(sec.label)}</span>${sec.sub ? `<span class="chip">${esc(sec.sub)}</span>` : `<span class="chip">${esc(SUBS[sec.id])}</span>`}</div>
+        <h2 class="title">${e.num ? `<span class="no">${esc(e.num)}</span>` : ""}${esc(e.title)}</h2>
+        ${e.en ? `<div class="en">${esc(e.en)}</div>` : ""}
+        <div class="meta">${e.timer ? ICON.clock : ICON.lane}<span>${esc(e.meta)}</span></div>
+        ${e.timer ? `<div class="tline"><button class="rb" type="button" data-timer="${e.timer}">${ICON.timer}<span>${e.timer}-Sek.-Timer starten</span></button><div class="timer" aria-live="off"><svg class="ring" viewBox="0 0 50 50"><circle class="bg" cx="25" cy="25" r="20"/><circle class="fg" cx="25" cy="25" r="20" stroke-dasharray="125.66" stroke-dashoffset="0"/></svg><b>${e.timer}</b></div></div>` : ""}
+        <p class="field"><b>Ausführung:</b> ${esc(field(e, "Ausführung"))}</p>
+        <p class="field"><b>Fokus:</b> ${esc(field(e, "Fokus"))}</p>
+        ${varLabel ? `<p class="field"><b>${esc(varLabel[0])}:</b> ${esc(varLabel[1])}</p>` : ""}
+        ${e.video ? `<a class="yt" href="${esc(e.video)}" target="_blank" rel="noopener">${ICON.yt}<span>Video mit echtem Spieler <small>· YouTube</small></span></a>` : ""}
+        ${e.i === 0 ? `<div class="hint">${ICON.down} Nach oben wischen für die nächste Übung</div>` : ""}
+      </div>
+    </div>
+  </section>`;
+}).join("") + `<section class="reel" id="rend" data-i="${EX.length}"><div class="card endcard">
+    <img src="logo.png" alt="" width="80" height="96">
+    <h2>Aufwärmen<br>geschafft</h2>
+    <p>${esc(DATA.trainer.replace(/\*\*/g, ""))}</p>
+    <button class="cta" type="button" id="again">Zurück zur Übersicht</button>
+  </div></section>`;
+
+$("#segs").innerHTML = SECTIONS.map(s => `<i style="--w:${s.items.length}" data-sec="${s.id}"></i>`).join("");
+
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const reels = [...feed.querySelectorAll(".reel")];
+let current = 0;
+
+function load(i) {
+  const r = reels[i]; if (!r) return;
+  const v = r.querySelector("video");
+  if (v && !v.src) { v.src = v.dataset.src; v.preload = "auto"; }
+}
+function activate(i) {
+  current = i;
+  reels.forEach((r, j) => {
+    const v = r.querySelector("video"); if (!v) return;
+    if (j === i) {
+      load(j);
+      if (!reduce && !r.classList.contains("paused")) { const p = v.play(); if (p) p.catch(() => r.classList.add("paused")); }
+      else r.classList.add("paused");
+    } else { v.pause(); }
+  });
+  load(i + 1); load(i - 1);
+  $("#c-i").textContent = Math.min(i + 1, EX.length);
+  SECTIONS.forEach(s => {
+    const seg = $(`#segs [data-sec="${s.id}"]`);
+    const done = Math.max(0, Math.min(s.items.length, i + 1 - s.first));
+    seg.style.setProperty("--p", (done / s.items.length * 100) + "%");
+  });
+  try { localStorage.setItem("sgk-warmup-pos", String(i)); } catch (_) {}
+}
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => { if (en.isIntersecting && en.intersectionRatio > 0.6) activate(+en.target.dataset.i); });
+}, { root: feed, threshold: [0.6] });
+reels.forEach(r => io.observe(r));
+
+function go(i, smooth) {
+  i = Math.max(0, Math.min(reels.length - 1, i));
+  reels[i].scrollIntoView({ behavior: smooth && !reduce ? "smooth" : "auto" });
+  activate(i);
+}
+function openReels(i) {
+  $("#reels").classList.add("open");
+  document.body.style.overflow = "hidden";
+  requestAnimationFrame(() => go(i, false));
+  if (location.hash !== "#training") history.replaceState ? safeHash("#training") : null;
+}
+function closeReels() {
+  stopTimer();
+  reels.forEach(r => { const v = r.querySelector("video"); if (v) v.pause(); });
+  $("#reels").classList.remove("open");
+  document.body.style.overflow = "";
+  safeHash("#start");
+  const el = document.querySelector(`#groups [data-jump="${current}"]`);
+  if (el) el.focus({ preventScroll: false });
+}
+function safeHash(h) { try { history.replaceState(null, "", h); } catch (_) { try { location.hash = h; } catch (__) {} } }
+
+document.addEventListener("click", ev => {
+  const j = ev.target.closest("[data-jump]");
+  if (j) { openReels(+j.dataset.jump); return; }
+  const tap = ev.target.closest(".tap");
+  if (tap) {
+    const r = tap.closest(".reel"), v = r.querySelector("video");
+    load(+r.dataset.i);
+    if (v.paused) { r.classList.remove("paused"); v.play().catch(() => r.classList.add("paused")); }
+    else { v.pause(); r.classList.add("paused"); }
+    return;
+  }
+  const t = ev.target.closest("[data-timer]");
+  if (t) { toggleTimer(t.closest(".reel"), +t.dataset.timer, t); return; }
+});
+$("#go").addEventListener("click", () => {
+  let pos = 0; try { pos = +(localStorage.getItem("sgk-warmup-pos") || 0); } catch (_) {}
+  openReels(pos >= EX.length ? 0 : pos);
+});
+$("#back").addEventListener("click", closeReels);
+$("#again").addEventListener("click", closeReels);
+$("#prev").addEventListener("click", () => go(current - 1, true));
+$("#next").addEventListener("click", () => go(current + 1, true));
+document.addEventListener("keydown", ev => {
+  if (!$("#reels").classList.contains("open")) return;
+  if (ev.key === "ArrowDown" || ev.key === "PageDown") { ev.preventDefault(); go(current + 1, true); }
+  if (ev.key === "ArrowUp" || ev.key === "PageUp") { ev.preventDefault(); go(current - 1, true); }
+  if (ev.key === "Escape") closeReels();
+});
+
+/* ---------- Timer ---------- */
+let tState = null, actx = null;
+function beep() {
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    [0, .22, .44].forEach((d, k) => {
+      const o = actx.createOscillator(), g = actx.createGain();
+      o.frequency.value = k === 2 ? 1320 : 880; o.connect(g); g.connect(actx.destination);
+      const t0 = actx.currentTime + d; g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(.25, t0 + .02); g.gain.exponentialRampToValueAtTime(.0001, t0 + .18);
+      o.start(t0); o.stop(t0 + .2);
+    });
+  } catch (_) {}
+}
+function stopTimer() {
+  if (!tState) return;
+  clearInterval(tState.iv);
+  tState.reel.classList.remove("timing", "done");
+  tState.btn.classList.remove("on");
+  tState.btn.querySelector("span").textContent = `${tState.secs}-Sek.-Timer starten`;
+  tState = null;
+}
+function toggleTimer(reel, secs, btn) {
+  if (tState && tState.reel === reel) { stopTimer(); return; }
+  stopTimer();
+  try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); actx.resume && actx.resume(); } catch (_) {}
+  const b = reel.querySelector(".timer b"), fg = reel.querySelector(".ring .fg");
+  const end = Date.now() + secs * 1000;
+  reel.classList.add("timing"); reel.classList.remove("done");
+  btn.classList.add("on"); btn.querySelector("span").textContent = "Timer stoppen";
+  const tick = () => {
+    const left = Math.max(0, end - Date.now());
+    b.textContent = Math.ceil(left / 1000);
+    fg.style.strokeDashoffset = String(125.66 * (1 - left / (secs * 1000)));
+    if (left <= 0) {
+      clearInterval(tState.iv); reel.classList.add("done"); b.textContent = "✓"; beep();
+      const r = reel; setTimeout(() => { if (tState && tState.reel === r) { stopTimer(); go(+r.dataset.i + 1, true); } }, 1400);
+    }
+  };
+  tState = { reel, btn, secs, iv: setInterval(tick, 200) };
+  tick();
+}
+feed.addEventListener("scroll", () => { if (tState && +tState.reel.dataset.i !== current) stopTimer(); }, { passive: true });
+
+/* ---------- Routing ---------- */
+function route() {
+  const h = location.hash;
+  const m = h.match(/^#uebung-(\d+)$/);
+  if (m) openReels(Math.max(0, Math.min(EX.length - 1, +m[1] - 1)));
+  else if (h === "#training") { if (!$("#reels").classList.contains("open")) $("#go").click(); }
+  else if ($("#reels").classList.contains("open")) closeReels();
+}
+addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>

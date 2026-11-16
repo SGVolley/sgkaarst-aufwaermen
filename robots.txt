@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sgvolley.github.io/sgkaarst-aufwaermen/sitemap.xml
