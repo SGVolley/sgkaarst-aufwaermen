@@ -236,7 +236,7 @@ $("#groups").innerHTML = SECTIONS.map(s => `
   <div class="list">${s.items.map(e => `
     <button class="item" type="button" data-jump="${e.i}">
       <img src="img/${e.key}.jpg" alt="" loading="lazy" width="76" height="68">
-      <span><b>${esc(e.title)}</b><small>${esc(e.meta)}${e.video ? ' · <span class="vid">▶ Video</span>' : ""}</small></span>
+      <span><b>${esc(e.title)}</b><small>${esc(e.meta)}${EMBED && e.video ? ' · <span class="vid">▶ Video</span>' : ""}</small></span>
     </button>`).join("")}</div>`).join("");
 
 /* ---------- Reels ---------- */
@@ -262,7 +262,7 @@ feed.innerHTML = EX.map(e => {
         <p class="field"><b>Ausführung:</b> ${esc(field(e, "Ausführung"))}</p>
         <p class="field"><b>Fokus:</b> ${esc(field(e, "Fokus"))}</p>
         ${varLabel ? `<p class="field"><b>${esc(varLabel[0])}:</b> ${esc(varLabel[1])}</p>` : ""}
-        ${e.video ? e.vids.map(v => `<a class="yt" href="${esc(v.url)}" target="_blank" rel="noopener">${ICON.yt}<span>${e.vids.length > 1 ? "Video " + esc(v.label.replace(/^Video /, "")) : (e.videoSimilar ? "Ähnliches Video" : "Video mit echtem Spieler")} <small>· auf YouTube öffnen</small></span></a>`).join("") + `${EMBED ? `<div class="yt-note">Beim Abspielen des echten Videos werden Daten an YouTube übertragen.${e.videoSimilar ? " Fremdes Video, zeigt eine ähnliche Übung." : ""}</div>` : (e.videoSimilar ? `<div class="yt-note">Fremdes Video, zeigt eine ähnliche Übung.</div>` : "")}` : ""}
+        ${EMBED && e.video ? `<div class="yt-note">Beim Abspielen des echten Videos werden Daten an YouTube übertragen.${e.videoSimilar ? " Fremdes Video, zeigt eine ähnliche Übung." : ""}</div>` : ""}
         ${e.i === 0 ? `<div class="hint">${ICON.down} Nach oben wischen für die nächste Übung</div>` : ""}
       </div>
     </div>
